@@ -4,5 +4,8 @@ plotly
 matplotlib
 yfinance
 sklearn
+scikit-learn
 StandardScaler
 LogisticRegression
+sklearn.preprocessing
+sklearn.linear_model
