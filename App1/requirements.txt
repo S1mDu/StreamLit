@@ -3,7 +3,6 @@ pandas
 plotly
 matplotlib
 yfinance
-sklearn
 scikit-learn
 train_test_split
 StandardScaler
