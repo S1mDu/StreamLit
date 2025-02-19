@@ -37,10 +37,16 @@ modelw.fit(Xw_train, yw_train)
 st.title('Water Safety Prediction')
 
 # Input form for user to enter chemical elements and impurities
+# Input form for user to enter chemical elements and impurities
 user_input = {}
 for column in Xw.columns:
-    if column != 'is_safe':
-        user_input[column] = st.slider(f'{column} Value', min_value=0, max_value=slider_ranges[column][1] + 0.5 * column_ranges[column], step=0.01, value=df_water[column].mean())
+    user_input[column] = st.slider(
+        f'{column} Value', 
+        min_value=float(0),  # Ensure min_value is a float
+        max_value=float(slider_ranges[column][1] + 0.5 * column_ranges[column]), 
+        step=0.01, 
+        value=float(df_water[column].mean())
+    )
 
 # Create a user input DataFrame
 user_input_df = pd.DataFrame(user_input, index=[0])
