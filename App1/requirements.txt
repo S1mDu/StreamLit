@@ -3,9 +3,4 @@ pandas
 plotly
 matplotlib
 yfinance
-scikit-learn
-train_test_split
-StandardScaler
-LogisticRegression
-sklearn.preprocessing
-sklearn.linear_model
+sklearn
